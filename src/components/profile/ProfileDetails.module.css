@@ -1,0 +1,44 @@
+.profile {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 3px;
+    border: rgb(227,232,240);
+    box-shadow: 10px 5px 5px rgb(167, 166, 166);
+    overflow: hidden;
+}
+
+.description{
+
+}
+
+.avatar {
+    width: 90px;
+
+}
+
+.name {
+
+}
+
+.tag {
+
+}
+
+.location {
+
+}
+
+.stats {
+    display: flex;
+
+}
+
+.label {
+
+}
+
+.quantity {
+
+}
