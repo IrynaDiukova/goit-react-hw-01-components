@@ -7,7 +7,7 @@ const TransactionHistory = props => {
     } = props;
 
     return (
-        <table class={css.transactionHistory}>
+        <table className={css.transactionHistory}>
             <thead>
                 <tr>
                 <th>Type</th>
@@ -29,7 +29,7 @@ const TransactionHistory = props => {
     )
 }
 
-TransactionHistory.prototype = {
+TransactionHistory.propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape(
         {type:PropTypes.string.isRequired,
          amount:PropTypes.string.isRequired,

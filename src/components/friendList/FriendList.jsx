@@ -7,7 +7,7 @@ const FriendList = props => {
     } = props;
 
     return (
-        <ul class={css.friendList}>
+        <ul className={css.friendList}>
             {friends.map(({id, avatar, name, isOnline}) => 
                 <FriendListItem key = {id} avatar = {avatar}  name = {name} isOnline = {isOnline}/>
             )}
@@ -15,7 +15,7 @@ const FriendList = props => {
     )
 };
 
-FriendList.prototype = {
+FriendList.propTypes = {
     friends: PropTypes.arrayOf(PropTypes.shape(
         {avatar:PropTypes.string.isRequired,
          name:PropTypes.string.isRequired,
