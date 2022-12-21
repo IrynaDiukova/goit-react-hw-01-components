@@ -2,12 +2,8 @@ import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 import { getRandomHexColor } from '../../utils/color';
 
-const Statistics = props => {
-    const {
-        title,
-        stats
-    } = props;
-
+const Statistics = ({title, stats}) => {
+    
     return (
         <section className={css.statistics}>
             {title && <h2 className={css.title}>{title}</h2>}
